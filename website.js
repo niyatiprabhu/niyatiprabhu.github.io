@@ -8,7 +8,7 @@ function funct() {
             count++;
         }
     }
-    var percent = parseFloat(100 * count / 50).toFixed(2);
+    var percent = 100 * count / 50;
     var message;
     if (percent == 0) {
         message = "You really didn't do anything during quarantine...";
