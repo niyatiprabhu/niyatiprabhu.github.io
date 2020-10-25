@@ -2,13 +2,13 @@
 
 function funct() {
     var i, count = 0;
-    for (i = 0; i < 35; i++) {
+    for (i = 0; i < 50; i++) {
         var box = document.getElementsByClassName("activities");
         if (box[i].checked) {
             count++;
         }
     }
-    var percent = parseFloat(100 * count / 35).toFixed(2);
+    var percent = parseFloat(100 * count / 50).toFixed(2);
     var message;
     if (percent == 0) {
         message = "You really didn't do anything during quarantine...";
@@ -19,6 +19,6 @@ function funct() {
     } else {
         message = "You are an expert at surving quarantine!";
     }
-    alert("You scored " + count + " out of 35: " + percent + "%.\n" + message);
+    alert("You scored " + count + " out of 50: " + percent + "%.\n" + message);
 }
 
